@@ -260,7 +260,8 @@ const App = () => {
         try {
             const taskDocRef = doc(db, `artifacts/${__app_id}/users/${userId}/tasks`, id);
             await updateDoc(taskDocRef, { completed: !currentCompleted });
-        } catch (e) {
+        }
+        catch (e) {
             console.error("Error updating document: ", e);
         }
     };
