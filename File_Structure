@@ -1,0 +1,41 @@
+my-study-app/
+├── public/
+│   ├── index.html         // Your main HTML file
+│   └── ... (static assets like favicon, images)
+├── src/
+│   ├── assets/            // Images, icons, fonts
+│   │   ├── images/
+│   │   └── icons/
+│   ├── components/        // Reusable UI components (e.g., Button, Modal, Card)
+│   │   ├── Navbar.js
+│   │   ├── Footer.js
+│   │   ├── LoadingSpinner.js
+│   │   └── ...
+│   ├── pages/             // Top-level components representing distinct pages/views
+│   │   ├── HomePage.js
+│   │   ├── StudyAssistantPage.js
+│   │   ├── AboutPage.js
+│   │   └── ...
+│   ├── services/          // API calls, Firebase interactions
+│   │   ├── firebase.js    // Firebase initialization and functions (e.g., signIn, getTasks)
+│   │   ├── geminiApi.js   // Functions for interacting with Gemini API
+│   │   └── ...
+│   ├── hooks/             // Custom React Hooks (e.g., useAuth, useTimer)
+│   │   ├── useAuth.js
+│   │   └── useTimer.js
+│   ├── contexts/          // React Context API for global state management
+│   │   ├── AuthContext.js
+│   │   ├── DataContext.js
+│   │   └── ...
+│   ├── utils/             // Utility functions (e.g., formatDate, latexRenderer)
+│   │   ├── latexRenderer.js // Your renderTextWithLatex function
+│   │   ├── timeUtils.js
+│   │   └── ...
+│   ├── App.js             // Main application component (routes, layout)
+│   ├── index.js           // Entry point for React app (ReactDOM.render)
+│   ├── index.css          // Global CSS or Tailwind imports
+│   └── tailwind.config.js // If you're customizing Tailwind
+├── .env                   // Environment variables
+├── .gitignore             // Files/folders to ignore in Git
+├── package.json           // Project dependencies and scripts
+└── README.md              // Project documentation
